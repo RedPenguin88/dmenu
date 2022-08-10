@@ -713,7 +713,7 @@ setup(void)
 	                    CopyFromParent, CopyFromParent, CopyFromParent,
 	                    CWOverrideRedirect | CWBackPixel | CWEventMask, &swa);
 	if (border_width)
-		XSetWindowBorder(dpy, win, scheme[SchemeSel][ColBg].pixel);
+		XSetWindowBorder(dpy, win, scheme[SchemeBorder][ColBg].pixel);
 	XSetClassHint(dpy, win, &ch);
 
 
