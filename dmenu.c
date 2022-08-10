@@ -743,7 +743,9 @@ static void
 usage(void)
 {
 	fputs("usage: dmenu [-bcfsv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
-	      "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]\n", stderr);
+	      "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]\n"
+	      "             [-bw width]"
+		  "\n", stderr);
 	exit(1);
 }
 
