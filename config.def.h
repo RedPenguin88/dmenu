@@ -31,3 +31,8 @@ static const char worddelimiters[] = " ";
 
 /* Size of the window border */
 static unsigned int border_width = 3;
+
+/*
+ * Use prefix matching by default; can be inverted with the -x flag.
+ */
+static int use_prefix = 1;

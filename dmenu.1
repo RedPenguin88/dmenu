@@ -3,7 +3,7 @@
 dmenu \- dynamic menu
 .SH SYNOPSIS
 .B dmenu
-.RB [ \-bcfsFvP ]
+.RB [ \-bcfsFvxP ]
 .RB [ \-l
 .IR lines ]
 .RB [ \-m
@@ -63,6 +63,9 @@ dmenu matches menu items case sensitively.
 .B \-F
 dmenu enables/disables fuzzy matching depending on your configuration.
 .TP
+.B \-x
+Invert prefix matching setting.
+.TP
 .B \-P
 dmenu will not directly display the keyboard input, but instead replace it with dots. All data from stdin will be ignored.
 .TP
@@ -119,7 +122,7 @@ dmenu is completely controlled by the keyboard.  Items are selected using the
 arrow keys, page up, page down, home, and end.
 .TP
 .B Tab
-Copy the selected item to the input field.
+Replace the current query with the longest common prefix of all matches
 .TP
 .B Return
 Confirm selection.  Prints the selected item to stdout and exits, returning
